@@ -1,0 +1,18 @@
+@import "_reset";
+@import "_header";
+@import "_main";
+@import "_titles";
+@import "_footer";
+@import "_effects";
+
+
+.hidden{
+    display: none;
+}
+.show{
+    display: flex;
+}
+
+body{
+    position: absolute;
+}
