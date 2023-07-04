@@ -5,50 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/styles/sass/styles.css">
     <script src="https://kit.fontawesome.com/dbf8b52bf4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
 <body>
     <header>
-        <figure>
-            <img src="assets/img/photo_profil.jpg"></img>
-        </figure>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#home">Accueil</a>
-                </li>
-                <li>
-                    <a href="#about">À Propos</a>
-                </li>
-                <li>
-                    <a href="#formations">Formations</a>
-                </li>                
-                <li>
-                    <a href="#skills">Compétences</a>
-                </li>                
-                <li>
-                    <a href="#projects">Mes projets</a>
-                </li>                
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>                
-            </ul>
-        </nav>
-        <ul>
+        <section>
+            <figure>
+                <img src="assets/img/photo_profil.jpg"></img>
+            </figure>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#about">À Propos</a>
+                    </li>
+                    <li>
+                        <a href="#formations">Formations</a>
+                    </li>                
+                    <li>
+                        <a href="#skills">Compétences</a>
+                    </li>                
+                    <li>
+                        <a href="#projects">Mes projets</a>
+                    </li>                
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>                
+                </ul>
+            </nav>
+        </section>
+        <ul id="last-element">
             <li>
                 <a href="https://www.linkedin.com/in/vincent-ollivier-063971136"><span class="fa-brands fa-linkedin"></span></a>
             </li>
             <li>
-                <a href="https://github.com/Bluebender"><sapn class="fa-brands fa-github"></span></a>
+                <a href="https://github.com/Bluebender"><span class="fa-brands fa-github"></span></a>
             </li>
         </ul>
+        <span id="span" class="fa-solid fa-bars"></span>
+        <section id="burger-menu" class="hidden">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#home">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="#about">À Propos</a>
+                    </li>
+                    <li>
+                        <a href="#formations">Formations</a>
+                    </li>                
+                    <li>
+                        <a href="#skills">Compétences</a>
+                    </li>                
+                    <li>
+                        <a href="#projects">Mes projets</a>
+                    </li>                
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li> 
+                    <li>
+                        <a href="https://www.linkedin.com/in/vincent-ollivier-063971136"><span class="fa-brands fa-linkedin"></span></a>
+                        <a href="https://github.com/Bluebender"><span class="fa-brands fa-github"></span></a>
+                    </li>
+                       
+                </ul>
+            </nav>
+
+        </section>
     </header>
 
     <main>
         <section id="home">
             <section>
-                <h1 class="animation">Vincent Ollivier</h1>
-                <p class="animation">Intégrateur et Développeur Web et Web Mobile</p>
+                <h1 id="animation1">Vincent Ollivier</h1>
+                <p id="animation2">Intégrateur et Développeur Web et Web Mobile</p>
             </section>
         </section>
 

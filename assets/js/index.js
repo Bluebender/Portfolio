@@ -1,16 +1,16 @@
 window.addEventListener("DOMContentLoaded", function(){  
 
     // Animations
-    const animations = document.getElementsByClassName("animation");
+    const animation1 = document.getElementById("animation1");
+    const animation2 = document.getElementById("animation2");
 
     const TL = gsap.timeline({paused: true});
 
-    TL.staggerFrom(animations, 2, {top: -100, opacity: 0, ease: "power2.out"}, 0.6)
+    TL
+    .staggerFrom(animation1, 1, {top: -100, opacity: 0, ease: "power2.out"}, 0.3)
+    .staggerFrom(animation2, 1, {top: 100, opacity: 0, ease: "power2.out"}, 0.3)
 
     TL.play();
-
-
-
 
     // Gestion des boutons next et preview
     let preview = document.getElementById("preview");
@@ -68,5 +68,21 @@ window.addEventListener("DOMContentLoaded", function(){
         }
     });
 
+    // Menu Burger
+    let burgerBtn = this.document.getElementById("span");
+    let menu = this.document.getElementById("burger-menu")
+    burgerBtn.addEventListener("click", function(){
+        menu.classList.toggle("hidden");
+        menu.classList.toggle("show");
+    });
+    this.document.addEventListener("click", function(e){
+        if(menu.className === "show"){
+            console.log("hello");
+            if(!menu.contains(e.target) && !burgerBtn.contains(e.target)){
+            menu.classList.remove("show");
+            menu.classList.add("hidden");
+            }
+        }
+    })
 
 })

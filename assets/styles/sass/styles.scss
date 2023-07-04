@@ -3,7 +3,7 @@
 @import "_main";
 @import "_titles";
 @import "_footer";
-@import "_effects";
+@import "_burger";
 
 
 .hidden{
@@ -15,4 +15,6 @@
 
 body{
     position: absolute;
+    font-family: 'Poppins', sans-serif;
 }
+

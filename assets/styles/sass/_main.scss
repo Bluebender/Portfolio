@@ -25,11 +25,15 @@ main{
                     position: relative;
                     font-size: 5rem;
                     font-weight: bold;
+                    font-family: 'Dancing Script', cursive;
+                    text-align: center;
                 } 
                 > p{
+                    position: relative;
                     text-align: center;
                     font-size: 3rem;
                     font-weight: bold;
+                    font-family: 'Dancing Script', cursive;
                 };
             }
         }
@@ -103,17 +107,36 @@ main{
             > section{
                 display: flex;
                 flex-direction: column;
+                > h3{
+                    text-decoration: underline;
+                }
                 > section{
                     display: flex;
-                    flex-direction: row;
+                    @media (min-width: 719px) {
+                        flex-direction: row;
+                    }
+                    @media (max-width: 719px) {
+                        flex-direction: column;
+                    }
+    
                     > figure{
-                        width: 50%;
+                        @media (min-width: 719px) {
+                            width: 50%;
+                        }
+                        @media (max-width: 719px) {
+                            width: 100%;
+                        }
                         > img{
                             width: 100%;
                         }
                     }
                     > section{
-                        width: 50%;
+                        @media (min-width: 719px) {
+                            width: 50%;
+                        }
+                        @media (max-width: 719px) {
+                            width: 100%;
+                        }
                         > p{
                             text-indent: 20px;
                         }
@@ -130,13 +153,12 @@ main{
                                 margin-bottom: 2vh;
                                 > span{
                                     font-size: 1.6rem;
-                                    margin: 0 1vw;
+                                    margin: 0 2vw;
                                 }
                                 > h4{
                                     text-align: center;
                                     font-size: 1.6rem;
                                     font-weight: bold;
-                                    margin-bottom: 1vh;
                                 }
                             }
                             > section{
@@ -152,6 +174,7 @@ main{
                                     }
                                     > p{
                                         width: 50%;
+                                        word-wrap: break-word;
                                     }
                                 }
                             }
@@ -167,6 +190,9 @@ main{
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                > p{
+                    text-align: center;
+                }
                 > a{
                     color: #a0760d;
                     font-size: 3rem;
