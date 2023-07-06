@@ -321,9 +321,22 @@ main > section:nth-of-type(5) {
 main > section:nth-of-type(5) > section {
   display: flex;
   flex-direction: column;
+  padding-bottom: 10vh;
+  margin-bottom: 10vh;
+}
+main > section:nth-of-type(5) > section:nth-of-type(1) {
+  border-bottom: 4px solid white;
+}
+@media (min-width: 719px) {
+  main > section:nth-of-type(5) > section:nth-of-type(2) > section {
+    flex-direction: row-reverse;
+  }
 }
 main > section:nth-of-type(5) > section > h3 {
   text-decoration: underline;
+}
+main > section:nth-of-type(5) > section:nth-of-type(2) > h3 {
+  text-align: right;
 }
 main > section:nth-of-type(5) > section > section {
   display: flex;
@@ -363,6 +376,13 @@ main > section:nth-of-type(5) > section > section > figure > img {
 }
 main > section:nth-of-type(5) > section > section > section > p {
   text-indent: 20px;
+}
+main > section:nth-of-type(5) > section > section > section a > span {
+  margin-top: 8vh;
+  width: 100%;
+  font-size: 12rem;
+  text-align: center;
+  color: black;
 }
 main > section:nth-of-type(5) > section > section > section > section {
   margin: 1vh 1vw;

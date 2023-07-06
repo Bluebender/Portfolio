@@ -107,8 +107,25 @@ main{
             > section{
                 display: flex;
                 flex-direction: column;
+                padding-bottom: 10vh;
+                margin-bottom: 10vh;
+                &:nth-of-type(1){
+                    border-bottom: 4px solid white;
+                }
+                &:nth-of-type(2){
+                    > section{
+                        @media (min-width: 719px) {
+                            flex-direction: row-reverse;
+                        }
+                    }
+                }
                 > h3{
                     text-decoration: underline;
+                }
+                &:nth-of-type(2){
+                    > h3{
+                        text-align: right;
+                    }
                 }
                 > section{
                     display: flex;
@@ -139,6 +156,13 @@ main{
                         }
                         > p{
                             text-indent: 20px;
+                        }
+                        a > span{
+                            margin-top: 8vh;
+                            width: 100%;
+                            font-size: 12rem;
+                            text-align: center;
+                            color: black;
                         }
                         > section{
                             margin: 1vh 1vw;
