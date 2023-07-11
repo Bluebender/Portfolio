@@ -102,7 +102,7 @@ window.addEventListener("DOMContentLoaded", function(){
         let skillSectionPourcentageBrut = skillSectionPourcentage.substring(0,2);
         let n = skillSectionPourcentageBrut; // Nombre final du compteur
         let cpt = 20; // Initialisation du compteur
-        let duree = 5; // Durée en seconde pendant laquel le compteur ira de 0 à 15
+        let duree = 2; // Durée en seconde pendant laquel le compteur ira de 0 à 15
         let delta = Math.ceil((duree * 1000) / n); // On calcule l'intervalle de temps entre chaque rafraîchissement du compteur (durée mise en milliseconde)
         let node =  skillSection; // On récupère notre noeud où sera rafraîchi la valeur du compteur
         let lancementAnimation = false
