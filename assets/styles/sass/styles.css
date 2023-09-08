@@ -495,4 +495,8 @@ footer > p {
 body {
   position: absolute;
   font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=styles.css.map */

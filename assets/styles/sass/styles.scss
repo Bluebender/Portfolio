@@ -6,15 +6,19 @@
 @import "_burger";
 
 
-.hidden{
+.hidden {
     display: none;
 }
-.show{
+
+.show {
     display: flex;
 }
 
-body{
+body {
     position: absolute;
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
